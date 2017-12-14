@@ -144,9 +144,26 @@ $ npm start
 
 Once the development server is started you should be able to reach the demo page (eg. `http://localhost:8080`)
 
+### Docker
 
+You can use [Docker Compose](https://docs.docker.com/compose/) to run this in a docker container.
 
+```sh
+$ docker-compose up
+```
 
+You can also build the Docker container and run it.
+
+```sh
+$ docker build . -t grapesjs
+$ docker run --name grapesjs -p 8080:8080 grapesjs
+```
+
+Simply add the `d` flag to make it run headless.
+
+```sh
+docker run --name grapesjs -p 8080:8080 -d grapesjs
+```
 
 ## Documentation
 

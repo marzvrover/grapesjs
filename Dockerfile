@@ -5,4 +5,4 @@ COPY . /app/
 WORKDIR /app/
 
 RUN npm i
-RUN npm start
+ENTRYPOINT npm start
